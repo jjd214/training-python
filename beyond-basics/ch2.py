@@ -39,81 +39,8 @@
 
 
 
-# # Find the longest string in a list of strings
-
-# mystr = ["hello", "world", "this is a string"]
-
-# longest_str = mystr[0]
-
-# for i in range(len(mystr)):
-#     if len(mystr[i]) > len(longest_str):
-#         longest_str = mystr[i]
-#     else:
-#         continue
-
-# print(f"The longest word is: {longest_str}")
-# print(f"Result: {len(longest_str)}")
 
 
-
-# # Rock paper scissors game
-# import random
-# import time
-
-# options = ["rock", "paper", "scissors"]
-
-# while True:
-#     print("Welcome to Rock, Paper, Scissors!")
-#     print("Type 'rock', 'paper', or 'scissors' to play.")
-#     print("Type 'exit' to quit the game.")
-
-#     ch = random.choice(options)
-
-#     user_input = input("Enter your choice: ").lower()
-
-#     if user_input in options:
-#         time.sleep(1)
-#         print(f"The engine played {ch}")
-
-#         if ch == "rock" and user_input == "scissors":
-#             print("You lose")
-#         elif ch == "paper" and user_input == "rock":
-#             print("You lose")
-#         elif ch == "scissors" and user_input == "paper":
-#             print("You lose")
-#         elif ch == user_input:
-#             print("It's a tie")
-#         else:
-#             print("You win!")
-#     else:
-#         break    
-
-    
-
-
-
-
-
-
-# # Number guessing game
-
-# import random
-
-# magic_number = random.randint(1, 100)
-# attempts = 0
-
-# while True:
-#     guess = int(input("Guess the magic number (1-100):"))
-
-#     if guess == magic_number:
-#         print("You guessed it!")
-#         print(f"You took {attempts} attempts.")
-#         break
-#     elif guess < magic_number:
-#         print("Too low!")
-#     else:
-#         print("Too high!")
-#     attempts += 1
 
 
 # import random

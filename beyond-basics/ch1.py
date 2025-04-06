@@ -84,52 +84,6 @@
 # else:
 #     print("That capital does not exist in dictionary")
 
-# # Quiz game
-
-# questions = (
-#     "What is the capital of France?",
-#     "What is the largest planet in our solar system?",
-#     "What is the chemical symbol for gold?",
-#     "What is the largest mammal in the world?",
-#     "What is the smallest country in the world?",
-# )
-
-# options = (
-#     ("A. Paris", "B. London", "C. Berlin", "D. Madrid"),
-#     ("A. Jupiter", "B. Saturn", "C. Mars", "D. Earth"),
-#     ("A. Au", "B. Ag", "C. Pb", "D. Fe"),
-#     ("A. Blue Whale", "B. Elephant", "C. Giraffe", "D. Hippopotamus"),
-#     ("A. Vatican City", "B. Monaco", "C. Nauru", "D. San Marino"),
-# )
-
-# answers = ("A", "A", "A", "A", "A")
-
-# guess = []
-
-# for i in range(len(questions)):
-#     print(questions[i])
-#     for j in range(len(options[i])):
-#         print(options[i][j], end=" ")
-#     print()
-#     temp_guess = input("Enter your answer (A, B, C, D): ").upper()
-#     guess.append(temp_guess)
-
-# show_score = []
-
-# count = 1
-
-# for i in range(len(answers)):
-#     if guess[i] == answers[i]:
-#         show_score.append(f"{count}. correct!")
-#     else:
-#         show_score.append(f"{count}. incorrect!")
-#     count += 1
-
-
-# print("--- Score ---")
-# for i in show_score:
-#     print(i)
-
 
 
 # # fruits = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
@@ -159,31 +113,7 @@
 #     for food in collection:
 #         print(food, end=" ")
 #     print()
-# # Shopping cart program
-
-# isTrue = True
-
-# foods = []
-# prices = []
-
-# while isTrue:
-#     food = input("Enter a food (q to quit): ").lower()
-
-#     if food == "q":
-#         isTrue = False
-#         break
-
-#     price = float(input(f"Enter the price of {food}: "))
-
-#     foods.append(food)
-#     prices.append(price)
-
-# print("--- Shopping Cart ---")
-
-# for i in range(len(foods)):
-#     print(f"{foods[i]} - {prices[i]}")
-
-# print(f"Total: {sum(prices)}")   
+  
 
 
 # which = input("Enter which number to count (even / odd): ")
@@ -231,19 +161,7 @@
 
 
 
-# # Countdown timer program
-# import time
 
-# my_time = int(input("Enter the time in seconds: "))
-
-# for i in reversed(range(1, my_time + 1)):
-#     seconds = i % 60
-#     minutes = int(i / 60) % 60
-#     hours = int(i / 3600)
-#     print(f"{hours:02}:{minutes:02}:{seconds:02}")
-#     time.sleep(1) 
-
-# print("Time's up!")
 # # For Loops
 
 # for i in range(1, 21):
@@ -256,45 +174,6 @@
 #     print(i)
 
 # print("Happy new year everyone!")
-
-
-
-
-# # Challenge 1: Compound interest calculator
-
-# principle = 0
-# rate = 0
-# time = 0
-
-# isTrue = True
-
-# while principle == 0:
-#     principle = float(input("Enter the principle amount: "))
-
-#     if principle <= 0:
-#         print("Principle amount must be greater than 0")
-#         principle = 0
-
-# while rate == 0:
-#     rate = float(input("Enter the rate of interest: "))
-
-#     if rate <= 0:
-#         print("Rate of interest must be greater than 0")
-#         rate = 0
-
-# while time == 0:
-#     time = float(input("Enter the time in years: "))
-
-#     if time <= 0:
-#         print("Time must be greater than 0")
-#         time = 0
-
-# total = principle * (1 + rate / 100) ** time
-# interest = total - principle
-
-# print(f"Total amount after {time:.0f} years is: {total:.2f}")
-# print(f"Interest earned is: {interest:.2f}")
-
 
 
 
