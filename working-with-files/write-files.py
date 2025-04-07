@@ -1,24 +1,24 @@
-# .csv
-import csv
+# # .csv
+# import csv
 
-employees = [
-    ["name", "age", "job"],
-    ["SpongeBob", 20, "cook"],
-    ["Patrick", 21, "unemployed"],
-    ["Sandy", 31, "Scientist"]
-]
+# employees = [
+#     ["name", "age", "job"],
+#     ["SpongeBob", 20, "cook"],
+#     ["Patrick", 21, "unemployed"],
+#     ["Sandy", 31, "Scientist"]
+# ]
 
-file_path = "C:/Users/Administrator/Downloads/testcsv.csv"
+# file_path = "C:/Users/Administrator/Downloads/input.csv"
 
-try:
-    with open(file_path, "x", newline="") as file:
-        writer = csv.writer(file)
-        for row in employees:
-            writer.writerow(row)
-        print(f"csv file was created {file_path} was created")
+# try:
+#     with open(file_path, "x", newline="") as file:
+#         writer = csv.writer(file)
+#         for row in employees:
+#             writer.writerow(row)
+#         print(f"csv file was created {file_path} was created")
 
-except FileExistsError:
-    print("file already exists.")
+# except FileExistsError:
+#     print("file already exists.")
 
 
 # # .json
@@ -31,7 +31,7 @@ except FileExistsError:
 #     "course": "BSIT"
 # }
 
-# file_path = "C:/Users/Administrator/Downloads/testjson.json"
+# file_path = "C:/Users/Administrator/Downloads/input.json"
 
 # try:
 #     with open(file_path, "x") as file:
@@ -50,7 +50,7 @@ except FileExistsError:
 # # .txt
 
 # text_data = "Hello world!"
-# file_path = "C:/Users/Administrator/Downloads/testfile.txt"
+# file_path = "C:/Users/Administrator/Downloads/input.txt"
 
 # students = ["Dimaya", "Jancis", "Ana Bien", "Johna Grace"]
 
