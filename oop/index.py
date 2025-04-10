@@ -1,3 +1,44 @@
+from abc import ABC, abstractmethod
+
+class Enemy:
+
+    def __init__(self, name, hp, atk):
+        self.name = name
+        self.hp = hp
+        self.atk = atk
+
+    @abstractmethod
+    def __str__(self):
+        pass
+
+
+class Zombie(Enemy):
+
+    def __init__(self, name, hp, atk, skill):
+        super().__init__(name, hp, atk)
+        self.skill = skill
+
+    def __str__(self):
+        return f"Name: {self.name.capitalize()}\nHealth: {self.hp}\nAttack: {self.atk}\nSkill: {self.skill}"
+
+
+
+class FlyingZombie(Enemy):
+
+    def __init__(self, name, hp, atk, special_skill):
+        super().__init__(name, hp, atk)
+        self.special_skill = special_skill
+
+    def __str__(self):
+        return f"Name: {self.name.capitalize()}\nHealth: {self.hp}\nAttack: {self.atk}\nSpecial Skill: {self.special_skill}"
+
+zombie = Zombie("zomboss", "2500", "500 dmg", "bomba")
+flying_zombie = FlyingZombie("zomfly", "1500", "1000 dmg", "deathcap")
+
+print(zombie)
+print()
+print(flying_zombie)
+
 
 
 # class A:
